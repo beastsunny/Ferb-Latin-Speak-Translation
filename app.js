@@ -18,24 +18,12 @@ function errorHandler(error) {
 
 function clickHandlerOfTranslate() {
 
-
     var inputValue = txtInput.value;
-
-
-
 
     fetch(getTranslationUrl(inputValue))
         .then(Response => Response.json())
-        .then(json => divOutput.textContent = json.contents.translated);
-};
-
-
-
-
-
-
-
-
+        .then(json => divOutput.textContent = json.contents.translated).catch(errorHandler);
+}
 
 
 
