@@ -9,6 +9,13 @@ function getTranslationUrl(text) {
     return serverUrl + "?text=" + text;
 }
 
+
+
+function errorHandler(error) {
+    console.log(error);
+    alert("Something is wrong with the server! Please try after sometime");
+}
+
 function clickHandlerOfTranslate() {
 
 
