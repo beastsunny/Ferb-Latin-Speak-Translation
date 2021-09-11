@@ -10,21 +10,15 @@ function getTranslationUrl(text) {
 }
 
 
-
 function errorHandler(error) {
     console.log(error);
     alert("Something is wrong with the server! Please try after sometime");
 }
 
+
 function clickHandlerOfTranslate() {
-
     var inputValue = txtInput.value;
-
-    fetch(getTranslationUrl(inputValue))
-        .then(Response => Response.json())
-        .then(json => divOutput.textContent = json.contents.translated).catch(errorHandler);
+    fetch(getTranslationUrl(inputValue)).then(Response => Response.json()).then(json => divOutput.textContent = json.contents.translated).catch(errorHandler);
 }
 
-
-
-btnTranslate.addEventListener("click", clickHandlerofTranslate);
+btnTranslate.addEventListener("click", clickHandlerOfTranslate);
