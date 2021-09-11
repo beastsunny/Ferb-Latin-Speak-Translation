@@ -9,6 +9,21 @@ function getTranslationUrl(text) {
     return serverUrl + "?text=" + text;
 }
 
+function clickHandlerOfTranslate() {
+
+
+    var inputValue = txtInput.value;
+
+
+
+
+    fetch(getTranslationUrl(inputValue))
+        .then(Response => Response.json())
+        .then(json => divOutput.textContent = json.contents.translated);
+};
+
+
+
 
 
 
