@@ -1,2 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Open+Sans:wght@300;400;600&family=Satisfy&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Open+Sans:wght@300;400;600&family=Satisfy&display=swap');
+            #txtInput {
+                display: block;
+                margin-top: 2rem;
+                height: 20vh;
+                width: 100%;
+                font-family: inherit;
+                font-size: large;
+            }
+            
+            #btnTranslate {
+                background-color: black;
+                font-size: large;
+                border: 0;
+                border-radius: 1rem;
+                font-family: inherit;
+                padding: 1rem 2rem;
+                margin: 1rem 0;
+                cursor: pointer;
+                color: white;
+            }
+            
+            #output {
+                border: 1px solid black;
+                height: 15vh;
+                width: 100%;
+                overflow: scroll;
+            }
